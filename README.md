@@ -1,5 +1,5 @@
 # Chess-3D
-A small chess game in created in `three.js`. It uses `webpack` as a bundling tool. All the 3D models were created by me in Blender. The game has a simple AI system based on the minimax algorithm with
+A simple interactive chess game in created in "Typescript" and "three.js". It uses `webpack` as a bundling tool. All the 3D models were created by me in Blender. The game has a simple AI system based on the minimax algorithm with
 alpha beta pruning. In order to not block the main thread (and do not freeze entire application) the AI is instantiated on a `webworker` instance.
 
 ![Chess 3D](https://user-images.githubusercontent.com/37155981/189495404-d5f2da23-fa9c-49eb-8980-7d8dd977f332.gif)

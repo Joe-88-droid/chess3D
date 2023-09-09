@@ -9,3 +9,5 @@ fs.renameSync(
   path.resolve(__dirname, distPath, "styles.min.css"),
   path.resolve(__dirname, distPath, "styles.css")
 );
+
+// update css
