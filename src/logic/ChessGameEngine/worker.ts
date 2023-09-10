@@ -1,6 +1,6 @@
 import { ChessAi } from "logic/ChessAi/ChessAi";
 import { WebWorkerEvent } from "./types";
-
+// Manage moves and time loader
 const chessAiManager = new ChessAi();
 
 addEventListener("message", (e: WebWorkerEvent) => {
