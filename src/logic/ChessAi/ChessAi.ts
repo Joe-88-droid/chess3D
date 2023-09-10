@@ -244,7 +244,6 @@ export class ChessAi {
     this.chessGame.remove(chessNotationPos);
     this.chessGame.put({ type: pieceType, color }, chessNotationPos);
 
-    // related to bug https://github.com/jhlywa/chess.js/issues/250
     this.chessGame.load(this.chessGame.fen());
   }
 
