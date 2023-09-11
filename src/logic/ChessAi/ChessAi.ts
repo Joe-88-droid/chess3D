@@ -190,7 +190,7 @@ export class ChessAi {
   }
 
   private isEndGameKing(prevSum: number, movedPiece: keyof PieceSet): boolean {
-    return prevSum < -1500 && movedPiece === "k";
+    return prevSum < -200 && movedPiece === "k";
   }
 
   private getOpponentValueFromSquareTable(
