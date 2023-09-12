@@ -108,7 +108,7 @@ export class Game {
       }
     );
   }
-
+  //329329;
   private onEndGame(chessInstance: ChessInstance, playerColor: PieceColor) {
     const endMsg = this.getEndGameMessage(chessInstance, playerColor);
 
