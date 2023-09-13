@@ -23,7 +23,7 @@ export class GameInterface {
     const div = document.createElement("DIV");
     div.setAttribute("id", id);
     div.style.display = "none";
-    div.innerHTML = "Opponent is thinking";
+    div.innerHTML = "Wait for Opponent Move";
 
     document.body.appendChild(div);
   }
