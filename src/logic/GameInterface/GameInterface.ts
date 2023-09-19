@@ -28,6 +28,7 @@ export class GameInterface {
     document.body.appendChild(div);
   }
 
+  //Create UI for 3D game
   private createPromotionElement(
     id: string,
     playerColor: PieceColor,
