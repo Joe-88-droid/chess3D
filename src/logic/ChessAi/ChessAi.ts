@@ -28,7 +28,7 @@ export class ChessAi {
     this.aiSquareTables = cloneDeep(PIECE_SQUARE_TABLES);
     this.opponentSquareTables = this.reverseSquareTablesForBlack();
   }
-  private whiteStart;
+  // private whiteStart;
 
   private reverseSquareTablesForBlack(): PieceSquareTables {
     const cloned = cloneDeep(PIECE_SQUARE_TABLES);

@@ -38,6 +38,25 @@ export class ChessScene extends BasicScene {
   }
 
   private onMouseDown = (event: MouseEvent): void => {
+    if (this.chessGameEngine.isAnySelected()) {
+      const intersects = this.raycaster.intersectObjects(this.children);
+      const item = intersects.find((el) => el.object.userData.ground);
+  
+      const actionResult = this.chessGameEngine.deselect(item.object);
+  
+      if (!actionResult) {
+        const { x, y } = this.getCoords(event);
+        this.clickPointer.x = x;
+        this.clickPointer.y = y;
+    
+        this.selectPiece();
+        return;
+        }
+  
+      this.onActionPerformed(actionResult);
+  
+    }
+
     const { x, y } = this.getCoords(event);
     this.clickPointer.x = x;
     this.clickPointer.y = y;
@@ -69,6 +88,7 @@ export class ChessScene extends BasicScene {
   }
 
   private onMouseUp = (): void => {
+    return
     if (!this.chessGameEngine.isAnySelected()) {
       return;
     }
