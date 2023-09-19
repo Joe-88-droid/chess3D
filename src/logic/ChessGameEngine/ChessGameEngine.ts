@@ -500,6 +500,7 @@ export class ChessGameEngine {
   }
 
   moveSelectedPiece(x: number, z: number): void {
+    return
     if (!this.selected) {
       return;
     }
