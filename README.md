@@ -8,10 +8,12 @@ alpha beta pruning. In order to not block the main thread (and do not freeze ent
 #### Important!
 If you are encountering performance issues make sure you have **hardware acceleration** switched on. It will allow the browser to use GPU for rendering which will improve performance significantly. 
 
+//Dev2023
+
 The guides for different browsers are available here:
 [Chrome](https://help.clickup.com/hc/en-us/articles/6327835447191-Enable-hardware-acceleration-in-Google-Chrome) | [Firefox](https://support.mozilla.org/en-US/kb/performance-settings) | [Opera](https://windowsreport.com/opera-browser-hardware-acceleration/)
 
-Game available on: https://chess-3d-mja9.vercel.app/
+Game available on: https://chess3dplay.vercel.app/
 
 ## Useful commands
 
